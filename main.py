@@ -20,7 +20,7 @@ def replaceZeroes(data):
     return data
 
 
-def agcwd(image, w=0.25):
+def agcwd(image, w=1):
     is_colorful = len(image.shape) >= 3
     img = extract_value_channel(image) if is_colorful else image
     img_pdf = get_pdf(img)
